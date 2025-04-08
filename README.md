@@ -7,10 +7,15 @@ Darshan Prashant Hegde, 1RV24MC031
 Hrithik Suresh, 1RV24MC044
 
 Team Question is
+
 Find the maximum and minimun of an array using maximum number of comparisons.
 
 Project Breakdown:
-J Ryan Roy -incharge of combining code and tracing each step
-Darshan - incharge of coding the function to check for min and max
+J Ryan Roy -incharge of combining code and tracing each step,
+
+Darshan - incharge of coding the function to check for min and max,
+
 Hrithik - incharge of coding the main function that calls the function.
 
+Function's name is : findMinMax
+Total Comparisons equals: 2(n-1) where n is the size of the array.
