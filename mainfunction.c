@@ -16,3 +16,6 @@ int main() {
 
     return 0;
 }
+//the name of the func should be findMAxMin
+//the function should have two arguments one integer array ,and one integer value which is a lenght of the array
+//print the maximum min in total  and comparisions 
