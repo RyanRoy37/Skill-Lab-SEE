@@ -1,0 +1,37 @@
+#This file contains the code for function findMaxMin
+
+void findMaxMin(int arr[], int n) {  # Expecting an array and size of array
+    int max = arr[0];
+    int min = arr[0];
+    int comparisons = 0;
+
+    printf("\nIndex\tElement\tCompare Max\tCompare Min\tCurrent Max\tCurrent Min\tComparisons\n");
+
+    for (int i = 0; i < n; i++) {
+        int compareMax = 0, compareMin = 0;
+
+        if (i != 0) {
+            if (arr[i] > max) {
+                max = arr[i];
+                compareMax = 1;
+            }
+            comparisons++;
+
+            if (arr[i] < min) {
+                min = arr[i];
+                compareMin = 1;
+            }
+            comparisons++;
+        }
+
+        printf("%d\t%d\t%s\t\t%s\t\t%d\t\t%d\t\t%d\n",
+               i, arr[i],
+               (i == 0 ? "N/A" : (compareMax ? "Yes" : "No")),
+               (i == 0 ? "N/A" : (compareMin ? "Yes" : "No")),
+               max, min, comparisons);
+    }
+
+    printf("\nFinal Maximum element: %d\n", max);
+    printf("Final Minimum element: %d\n", min);
+    printf("Total Comparisons Made: %d\n", comparisons);
+}
